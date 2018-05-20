@@ -13,7 +13,7 @@
     <!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<!-- FontAwesome CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Tajawal" rel="stylesheet">
 </head>
@@ -21,12 +21,11 @@
 
 	<!-- HEADER
 	================================================= -->
-	<header class="site-header" role="banner">	
-			<div class="navbar navbar-light navbar-toggleable-sm navbar-expand-sm d-flex">
-				<div class="container navbar-wrapper">
-					<!-- Mobile navigation menu & Logo -->
+	<header id="navbar">	
+			<div class="container navbar navbar-light navbar-toggleable-sm navbar-expand-sm d-flex">
+				<div class="navbar-wrapper">
 					<div id="navbar-header">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+						<button class="navbar-toggler left" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
 				         	<span class="navbar-toggler-icon"></span>
 				         	<span class="sr-only">Toogle Navigation</span>
 						    <span class="navbar-toggle-icon">
@@ -35,14 +34,11 @@
 							    <span class="icon-bar"></span>
 						    </span>
 						</button>
-						<!--
-						<a class="navbar-brand" href="#">Navbar</a>-->
-						
+						<!-- Logo -->
 						<a href="index.html" class="navbar-brand"><img src="assets/img/header.png" alt="Logo"> </a> 
 					</div>
 					<!-- Menu Navigation -->
-					<div id="navbar-menu" class="collapse navbar-collapse mb-0">
-					  	<!-- Menu -->
+					<div id="navbar-menu" class="collapse navbar-collapse">
 						<ul class="navbar-nav top-menu">
 							<li class="menu"><a href="destinations-page.html" class="link-menu">Destination<span class="top-menu-active"></span></a></li>
 							<li class="menu"><a href="packages-page.html" class="link-menu">Travel Package<span class="top-menu-active"></span></a></li>
@@ -51,8 +47,8 @@
 							<li class="menu top-language"><div id="google_translate_element"></div></li>
 							<!-- END Language User -->
 						</ul>
-						<!-- END Menu -->
 					</div>
+					<!-- End Menu -->
 				</div>
 			</div>
 			<script type="text/javascript">
@@ -72,17 +68,8 @@
 		            $(".booking-page").hide();
 		        }
 			</script>
-			<!-- country menu and language -->
-			<div class="language-shown-hide">
-				<div class="dismissable-country-language" style="display:none" onclick="closeshowmenu()"></div>
-				<div class="full-width" style="z-index: 16;position: relative;">
-					<div class="container">
-
-					</div>
-				</div>
-			</div>
 			<div class="booking-shown-hide" >
-				<div class="booking-page" style="display:none" onclick="closebookingpage()"></div>
+				<div class="booking-page" style="display: none;"> </div>
 				<div class="full-width" id="booking-page" style="z-index: 16;position: relative;">
 					<div class="container">
 				    	<div class="row" data-spy="scroll" data-offset="0">
@@ -189,7 +176,7 @@
 				</div>
 			</div>
 	</header>
-	<!-- End HEADER -->
+	<!-- END HEADER -->
 
 	
 	<section id="slideshow-packages">
@@ -254,7 +241,7 @@
 		</div>
 	</section>
 
-	<!-- SECTION TITLE
+			<!-- SECTION TITLE
 			================================================= -->
 			<section id="title-page" class="full-width">
 				<div class="container">
@@ -398,10 +385,10 @@
 			<div class="row" id="primary">
 				<div id="content" class="col-md-20">
 						<div class=" row travel-row clearfix card-group center">
-							<a href="content-packages-page.html" class="border-radius-base box-shadow-hover packagelink">
-								<div class="package">
+							<a href="content-packages-page.html" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 packagelink">
+								<div class="package  border-radius-base box-shadow-hover">
 									<div class="card">
-										<img class="img-package" src="assets/img/001.jpg" alt="Card image cap">
+										<img src="assets/img/001.jpg" alt="Card image cap">
 										<div class="package-body">
 											<div class="package-title">
 												<h5 >PackageTitle</h5>
@@ -421,10 +408,10 @@
 									</div>
 								</div>
 							</a>
-							<a href="content-packages-page.html" class="border-radius-base box-shadow-hover packagelink">
-								<div class="package">
+							<a href="content-packages-page.html" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 packagelink">
+								<div class="package  border-radius-base box-shadow-hover">
 									<div class="card">
-										<img class="img-package" src="assets/img/001.jpg" alt="Card image cap">
+										<img src="assets/img/001.jpg" alt="Card image cap">
 										<div class="package-body">
 											<div class="package-title">
 												<h5 >PackageTitle</h5>
@@ -444,10 +431,10 @@
 									</div>
 								</div>
 							</a>
-							<a href="content-packages-page.html" class="border-radius-base box-shadow-hover packagelink">
-								<div class="package">
+							<a href="content-packages-page.html" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 packagelink">
+								<div class="package  border-radius-base box-shadow-hover">
 									<div class="card">
-										<img class="img-package" src="assets/img/001.jpg" alt="Card image cap">
+										<img src="assets/img/001.jpg" alt="Card image cap">
 										<div class="package-body">
 											<div class="package-title">
 												<h5 >PackageTitle</h5>
@@ -467,10 +454,10 @@
 									</div>
 								</div>
 							</a>
-							<a href="content-packages-page.html" class="border-radius-base box-shadow-hover packagelink">
-								<div class="package">
+							<a href="content-packages-page.html" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 packagelink">
+								<div class="package  border-radius-base box-shadow-hover">
 									<div class="card">
-										<img class="img-package" src="assets/img/001.jpg" alt="Card image cap">
+										<img src="assets/img/001.jpg" alt="Card image cap">
 										<div class="package-body">
 											<div class="package-title">
 												<h5 >PackageTitle</h5>
@@ -490,29 +477,6 @@
 									</div>
 								</div>
 							</a>
-							<a href="content-packages-page.html" class="border-radius-base box-shadow-hover packagelink">
-								<div class="package">
-									<div class="card">
-										<img class="img-package" src="assets/img/001.jpg" alt="Card image cap">
-										<div class="package-body">
-											<div class="package-title">
-												<h5 >PackageTitle</h5>
-											</div>
-											<div class="package-text">
-												<ul>
-												    <li>This is a description</li>
-												    <li>This is a description</li>
-												    <li>This is a description</li>
-												    <li>This is a description</li>
-												</ul>
-											</div>
-										</div>
-										<div class="package-footer ">
-											<small class="btn btn-primary btn-book btn-xs btn-block">Book Now</small>
-										</div>
-									</div>
-								</div>
-							</a>				
 						</div>
 						<div class="more">
 							<a href="packages-page.html"> More Packages...</a>
@@ -530,13 +494,13 @@
 	    <div class="container-fluid clearfix text-center  font-small full-width">
 	        <div class="row ">
 	            <!--First column-->
-	            <div class="footer-partners col-md-4 col-sm-6 col-lg-4 col-xl-3">
+	            <div class="footer-partners col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	            	<div class="partner-header">
-		            	<h5 class="text-uppercase font-weight-bold">
+		            	<h5 class="text-uppercase">
 		                   	<strong>Our Partner</strong>
 			            </h5>
 		            </div>
-		            <hr class="deep-purple accent-2 mb-4 mt-0 mx-auto" style="width: 60px;">
+		            <hr class="mb-4 mt-0 mx-auto" style="width: 60px;background-color: #4286f4;">
 	            	<div class="row partners">
 	            		<div class="col logo-partner">
 	            			<a href="#" ><img src="assets/img/just.jpg" alt="partner"></a>
@@ -550,22 +514,21 @@
 	            		<div class="col logo-partner">
 	            			<a href="#" ><img src="assets/img/just.jpg" alt="partner"></a>
 	            		</div>            		
-
 		            </div>
 	            </div>
 	            <!--/.First column-->
 
 	            <!--Second column-->
-	            <div class="footer-menu col-md-4 col-sm-6 col-lg-3 col-xl-3 mx-auto">
-	                <h5 class="text-uppercase font-weight-bold">
+	            <div class="footer-menu col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	                <h5 class="text-uppercase">
 	                    <strong>Menu</strong>
 	                </h5>
-	                <hr class="deep-purple accent-2 mb-4 mt-0 mx-auto" style="width: 60px;">
+	                <hr class="mb-4 mt-0 mx-auto" style="width: 60px;background-color: #4286f4;">
 	                <div class="menus">
 	                	<ul class="list-unstyled">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a  href="#">Destination</a></li>
-							<li><a  href="#">Travel Package</a></li>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a  href="destinations-page.html">Destination</a></li>
+							<li><a  href="packages-page.html">Travel Package</a></li>
 							<li><a  href="#">Booking</a></li>
 							<li><a  href="#">Disclaimer</a></li>
 							<li><a  href="#">Privacy Policy</a></li>
@@ -575,11 +538,11 @@
 	            <!--/.Second column-->
 
 	            <!--Third column-->
-	            <div class="footer-contacts col-md-4 col-sm-6 col-lg-4 col-xl-3">
-	                <h5 class="text-uppercase font-weight-bold">
+	            <div class="footer-contacts col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	                <h5 class="text-uppercase">
 	                    <strong>Contact</strong>
 	                </h5>
-	                <hr class="deep-purple accent-2 mb-4 mt-0 mx-auto" style="width: 60px;">
+	                <hr class=" mb-4 mt-0 mx-auto" style="width: 60px;background-color: #4286f4;">
 	                <div>
 	                	<span class="fa fa-map-marker footer-contacts-icon"></span>
 	                	<p><span class="new-line-span">New York, NY 10012, US</span></p>       
@@ -592,12 +555,13 @@
 	                	<i class="fa fa-phone footer-contacts-icon"></i>
 	                	<p><span class="new-line-span">+ 01 234 567 88</span></p>       
 	                </div>
-	                <div class=" social-link social-icons text-center mb-3">
-						<a id="footer-social-facebook" target="_blank" href="https://www.facebook.com/" class="btn-floating btn-black waves-effect waves-light btn-social-all"><i class="fa fa-facebook left"></i></a>
-						<a id="footer-social-twitter" target="_blank" href="https://twitter.com/" class="btn-floating btn-black waves-effect waves-light btn-social-all"><i class="fa fa-twitter left"></i></a>
-						<a id="footer-social-youtube" target="_blank" href="https://www.youtube.com/" class="btn-floating btn-black waves-effect waves-light btn-social-all"><i class="fa fa-youtube left"></i></a>
-						<a id="footer-social-gplus" target="_blank" href="https://plus.google.com/" class="btn-floating btn-black waves-effect waves-light btn-social-all"><i class="fa fa-google-plus left"></i></a>
-						<a id="footer-social-instagram" target="_blank" href="https://instagram.com" class="btn-floating btn-black waves-effect waves-light btn-social-all"><i class="fa fa-instagram left"></i></a>
+	                <div class="social-icons text-center">
+	                	<ul class="social-link">
+	                		<li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	                		<li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+	                		<li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube "></i></a></li>
+	                		<li><a href="https://plus.google.com/"><img src=""><i class="fa fa-gplus "></i></a></li>
+	                		<li><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram "></i></a></li>
 					</div>
 	            </div>
 	            <!--/.Third column-->
@@ -611,6 +575,7 @@
 	    <!--/.Copyright -->
 	</footer>
 	<!-- End FOOTER -->
+
 
 
 	<!-- Javascript -->
